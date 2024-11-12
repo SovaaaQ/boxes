@@ -1,7 +1,6 @@
 import React from "react";
 import Select from "react-select"
 import mailBoxModel from "../model/mailBoxModel";
-import './styles.css';
 
 
 
