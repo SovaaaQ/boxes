@@ -1,3 +1,5 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 .App {
   text-align: left;
 }
@@ -8,4 +10,45 @@
 
 .title_2{
   padding: 20px 70px 20px 70px;
+}
+
+.slider-container {
+  width: 300px; /* Ширина слайдера */
+  margin: 20px auto;
+}
+
+.model {
+  text-align: center;
+}
+
+.model-image {
+  width: 100%;
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+
+.model-name {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
 }
