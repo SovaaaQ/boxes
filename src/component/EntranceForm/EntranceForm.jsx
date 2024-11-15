@@ -5,6 +5,12 @@ const EntranceForm = () => {
   const [numEntrances, setNumEntrances] = useState(1);
   const [entrances, setEntrances] = useState([{ id: 1, numApartments: 0 }]);
 
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
   const handleNumEntrancesChange = (event) => {
     const newNumEntrances = parseInt(event.target.value);
     setNumEntrances(newNumEntrances);
@@ -28,24 +34,42 @@ const EntranceForm = () => {
   };
 
   return (
-    <div className='container div_num_entrances'>
-      <div>
+    <div >
+      <div className='container div_num_entrances'>
         <label className='num_entrances'>
           Количество подъездов
           <input type="number" className='num_entrances-input' value={numEntrances} onChange={handleNumEntrancesChange} />
         </label>
+        <button className='button_text_num'>Количество квартир в подъездах <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M37 14.5L22 29.5L7 14.5" stroke="#333333" stroke-width="3" />
+        </svg></button>
       </div>
+      <div className='button_choise'>
+        <label htmlFor="yes" className='label_text_num'>Одинаковое количетсво квартир</label>
+        <input
+          type="checkbox"
+          id="yes"
+          name="yes"
+          onChange={handleCheckboxChange}
+        />
 
-      {entrances.map((entrance, index) => (
-        <div key={entrance.id}>
-          <label>
-            Количество квартир в {entrance.id} подъезде
-            <input type="number" className='num_entrances-input' value={entrance.numApartments} onChange={(event) => handleNumApartmentsChange(event, index)} />
-          </label>
-        </div>
-      ))}
+        {entrances.map((entrance, index) => (
+          <div key={entrance.id}>
+            <div>
+              <div className='quntity_entrance'>
+                {entrance.id} подъезд
+                <input type="number" className='num_entrances-input' value={entrance.numApartments} onChange={(event) => handleNumApartmentsChange(event, index)} />
+
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
+
 
 export default EntranceForm;
