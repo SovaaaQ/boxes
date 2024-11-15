@@ -1,5 +1,5 @@
 import './App.css';
-import EntranceForm from './component/EntranceForm';
+import EntranceForm from './component/EntranceForm/EntranceForm';
 import SizeMailbox from './component/SizeMailbox';
 import ChoiceModel from './component/ChoiceModel';
 import SpamAndBatteries from './component/SpamAndBatteries';

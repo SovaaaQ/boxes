@@ -1,0 +1,14 @@
+.num_entrances{
+    border: 2px solid;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}

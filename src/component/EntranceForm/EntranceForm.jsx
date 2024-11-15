@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './EntranceForm.css';
 
 const EntranceForm = () => {
   const [numEntrances, setNumEntrances] = useState(1);
@@ -29,13 +30,13 @@ const EntranceForm = () => {
   return (
     <div>
       <label>
-        Укажите количество подъездов
-        <input type="number" value={numEntrances} onChange={handleNumEntrancesChange} />
+        Количество подъездов
+        <input type="number" className='num_entrances' value={numEntrances} onChange={handleNumEntrancesChange} />
       </label>
       {entrances.map((entrance, index) => (
         <div key={entrance.id}>
           <label>
-            Укажите количество квартир в {entrance.id} подъезде
+            Количество квартир в {entrance.id} подъезде
             <input type="number" value={entrance.numApartments} onChange={(event) => handleNumApartmentsChange(event, index)} />
           </label>
         </div>
