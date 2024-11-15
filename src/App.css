@@ -13,24 +13,32 @@
 }
 
 .slider-container {
-  width: 300px; /* Ширина слайдера */
+  width: 1200px; /* Ширина слайдера */
   margin: 20px auto;
 }
 
 .model {
+  width: 246px; /* Ширина карточки */
+  height: 282px; /* Высота карточки */
+  padding: 64px 30px; /* Внутренние отступы для карточки */
+  box-sizing: border-box; /* Учитывает padding в размере */
   text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Радиус углов для карточек */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Разделяет картинку и текст */
+  background-color: #fff; /* Белый фон для карточки */
 }
 
 .model-image {
-  width: 100%;
-  /*border: 1px solid #ccc;*/
-  border-radius: 5px;
+  width: 120px; /* Ширина изображения */
+  height: 160px; /* Высота изображения */
+  object-fit: contain; /* Сохранение пропорций изображения */
+  margin-bottom: 30px; /* Отступ между картинкой и текстом */
 }
 
-.model-name {
-  margin-top: 5px;
-  font-size: 14px;
-}
+
 
 .arrow {
   font-size: 24px;
@@ -51,4 +59,10 @@
   top: 50%;
   left: -25px;
   transform: translateY(-50%);
+}
+.model-description {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  max-width: 180px; /* Ограничиваем ширину для текста */
 }
