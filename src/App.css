@@ -4,12 +4,12 @@
   text-align: left;
 }
 
-.title_1{
-  padding: 20px 70px 20px 70px;
+.section{
+  width: 100%;
 }
-
-.title_2{
-  padding: 20px 70px 20px 70px;
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .slider-container {

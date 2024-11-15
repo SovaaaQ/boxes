@@ -28,16 +28,19 @@ const EntranceForm = () => {
   };
 
   return (
-    <div>
-      <label>
-        Количество подъездов
-        <input type="number" className='num_entrances' value={numEntrances} onChange={handleNumEntrancesChange} />
-      </label>
+    <div className='container div_num_entrances'>
+      <div>
+        <label className='num_entrances'>
+          Количество подъездов
+          <input type="number" className='num_entrances-input' value={numEntrances} onChange={handleNumEntrancesChange} />
+        </label>
+      </div>
+
       {entrances.map((entrance, index) => (
         <div key={entrance.id}>
           <label>
             Количество квартир в {entrance.id} подъезде
-            <input type="number" value={entrance.numApartments} onChange={(event) => handleNumApartmentsChange(event, index)} />
+            <input type="number" className='num_entrances-input' value={entrance.numApartments} onChange={(event) => handleNumApartmentsChange(event, index)} />
           </label>
         </div>
       ))}
