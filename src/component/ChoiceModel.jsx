@@ -22,7 +22,7 @@ const ChoiceModel = () => {
                         {mailBoxModel.map((model, index) => (
                             <div key={index} className="model">
                                 <img src={model.image} alt={model.name} className="model-image" />
-                                <div className="model-name">{model.name}</div>
+                                <div className="model-description">{model.description}</div>
                             </div>
                         ))}
                     </Slider>
