@@ -9,12 +9,12 @@ function App() {
     <div className="App container section">
       <header className="App-header">
         <h1 className='title_1'>Конструктор почтовых ящиков</h1>
-        <h2 className='title_2'>Выберите модель почтового ящика</h2>
+        
       </header>
       <body>
+        <ChoiceModel/>
         <EntranceForm/>
         <SizeMailbox/>
-        <ChoiceModel/>
         <SpamAndBatteries/>
       </body>
     </div>

@@ -29,17 +29,17 @@ input[type="number"]::-webkit-inner-spin-button {
     background: #fff;
 
     
-    
 }
 
 .button_text_num{
     font-weight: 700;
-    border: 2px solid var(--branded-gray);
+    border: 2px solid #F2F2F2;
     border-radius: 2px;
     padding: 10px 54px;
     display: flex;
     align-items: center;
     gap: 20px;
+    background-color: #fff;
 }
 .label_text_num{
     font-weight: 500;
