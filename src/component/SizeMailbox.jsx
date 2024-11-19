@@ -25,6 +25,10 @@ const SizeMailbox = () => {
         Высота
         <input type="number" value={length} onChange={handleLengthChange} />
       </label>
+      <label>
+        Глубина
+        <input type="number" value={length} onChange={handleLengthChange} />
+      </label>
     </div>
   );
 };
