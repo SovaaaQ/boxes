@@ -20,7 +20,7 @@
 .model {
   width: 246px; /* Ширина карточки */
   height: 282px; /* Высота карточки */
-  padding: 64px 30px; /* Внутренние отступы для карточки */
+  padding: 40px 35px; /* Внутренние отступы для карточки */
   box-sizing: border-box; /* Учитывает padding в размере */
   text-align: center;
   border: 1px solid #ccc;
@@ -29,8 +29,14 @@
   flex-direction: column;
   justify-content: space-between; /* Разделяет картинку и текст */
   background-color: #fff; /* Белый фон для карточки */
+  position: relative; /* Для позиционирования */
+  transition: all 0.3s ease; /* Плавный переход */
 }
 
+.model:hover {
+  background: linear-gradient(to bottom, #AE2121 50%, #fff 50%); /* Градиент для разделения цветов */
+  border-radius: 0; /* Убираем скругления */
+}
 .model-image {
   width: 120px; /* Ширина изображения */
   height: 160px; /* Высота изображения */
