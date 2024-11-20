@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './EntranceForm.css';
+import ButtonEntrance from '../ButtonEntrance/ButtonEntrance';
 
 const EntranceForm = () => {
   const [numEntrances, setNumEntrances] = useState(1);
   const [entrances, setEntrances] = useState([{ id: 1, numApartments: 0 }]);
   const [isChecked, setIsChecked] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleCheckboxChange = (event) => {
     const checked = event.target.checked;
@@ -51,11 +52,7 @@ const EntranceForm = () => {
   };
 
   const handleButtonClick = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -65,53 +62,48 @@ const EntranceForm = () => {
           Количество подъездов
           <input type="number" className='num_entrances-input' value={numEntrances} onChange={handleNumEntrancesChange} />
         </label>
-        <button className='button_text_num' onClick={handleButtonClick}>
-          Количество квартир в подъездах
-          <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M37 14.5L22 29.5L7 14.5" stroke="#333333" stroke-width="3" />
-          </svg>
-        </button>
-      </div>
-      <div className='button_choise'>
-        <label htmlFor="yes" className='label_text_num'>Одинаковое количетсво квартир</label>
-        <input
-          type="checkbox"
-          id="yes"
-          name="yes"
-          checked={isChecked}
-          onChange={handleCheckboxChange}
-        />
+        <div className='dropdown'>
+          <button className='dropdown-button' onClick={handleButtonClick}>
+            Количество квартир в подъездах
+            <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37 14.5L22 29.5L7 14.5" stroke="#333333" stroke-width="3" />
+            </svg>
+          </button>
+          {isDropdownOpen && (
+            <div className='dropdown-content'>
+              <div className='button_choise'>
+                <div className='checkbox-label'>
+                  <label htmlFor="yes" className='label_text_num'>Одинаковое количетсво квартир</label>
+                  <input
+                    type="checkbox"
+                    id="yes"
+                    name="yes"
+                    checked={isChecked}
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
 
-        {entrances.map((entrance, index) => (
-          <div key={entrance.id}>
-            <div>
-              <div className='quntity_entrance'>
-                {entrance.id} подъезд
-                <input
-                  type="number"
-                  className='num_entrances-input'
-                  value={entrance.numApartments}
-                  onChange={(event) => handleNumApartmentsChange(event, index)}
-                />
+                <div className={`entrance-grid ${entrances.length > 5 ? 'two-columns' : ''}`}>
+                  {entrances.map((entrance, index) => (
+                    <div key={entrance.id} className='entrance-item'>
+                      <div className='quntity_entrance'>
+                        {entrance.id} подъезд
+                        <input
+                          type="number"
+                          className='num_entrances-input'
+                          value={entrance.numApartments}
+                          onChange={(event) => handleNumApartmentsChange(event, index)}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={handleCloseModal}>&times;</span>
-            <h2>Количество квартир в подъездах</h2>
-            {entrances.map((entrance, index) => (
-              <div key={entrance.id}>
-                <p>{entrance.id} подъезд: {entrance.numApartments} квартир</p>
-              </div>
-            ))}
-          </div>
+          )}
         </div>
-      )}
+      </div>
+      <ButtonEntrance numEntrances={numEntrances} />
     </div>
   );
 };
