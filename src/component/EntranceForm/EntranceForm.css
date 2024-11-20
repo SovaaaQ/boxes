@@ -36,7 +36,6 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: space-between;
     margin-bottom: 10px;
 }
-<<<<<<< HEAD
 
 .button_text_num{
     font-weight: 700;
@@ -57,7 +56,6 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
     gap: 5px;
 }
-=======
  
 .button_text_num{ 
     font-weight: 700; 
@@ -149,4 +147,3 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   
->>>>>>> 2a04fee (eight)
