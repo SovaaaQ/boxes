@@ -36,6 +36,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+<<<<<<< HEAD
 
 .button_text_num{
     font-weight: 700;
@@ -56,3 +57,96 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
     gap: 5px;
 }
+=======
+ 
+.button_text_num{ 
+    font-weight: 700; 
+    border: 2px solid #F2F2F2; 
+    border-radius: 2px; 
+    padding: 10px 54px; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    background-color: #fff; 
+} 
+.label_text_num{ 
+    font-weight: 500; 
+} 
+ 
+.quntity_entrance{ 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+} 
+.dropdown { 
+    position: relative; 
+    display: inline-block; 
+  } 
+   
+  .dropdown-button { 
+    background-color: #fff; 
+    color: black; 
+    padding: 16px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    width: 400px;
+    justify-content: center;
+  } 
+   
+  .dropdown-button svg { 
+    margin-left: 8px; 
+  } 
+   
+  .dropdown-content { 
+    display: block;
+    position: absolute;
+    right: 0;
+    /* top: 100%; */
+    /* background-color: #f9f9f9; */
+    /* min-width: 320px; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* padding: 16px; */
+    width: 400px; 
+  } 
+   
+  .dropdown-content .button_choise { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Center the content */ 
+  } 
+   
+  .dropdown-content .checkbox-label { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 16px; 
+  } 
+   
+  .dropdown-content .label_text_num { 
+    margin-right: 8px; 
+  } 
+   
+  .entrance-grid { 
+    display: grid; 
+    gap: 16px; 
+    justify-items: center; /* Center the items */ 
+  } 
+   
+  .entrance-grid.two-columns { 
+    grid-template-columns: 1fr 1fr; 
+  } 
+   
+  .entrance-item { 
+    margin-bottom: 8px; 
+    text-align: center; /* Center the text */ 
+  } 
+   
+  .entrance-item .num_entrances-input { 
+    margin-left: 8px; 
+  }
+
+  
+>>>>>>> 2a04fee (eight)
