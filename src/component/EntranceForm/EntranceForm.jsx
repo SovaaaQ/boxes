@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import './EntranceForm.css';
 
@@ -117,7 +116,6 @@ const EntranceForm = () => {
   );
 };
 
-=======
 import React, { useState } from 'react'; 
 import './EntranceForm.css'; 
  
@@ -226,5 +224,4 @@ const EntranceForm = () => {
   ); 
 }; 
  
->>>>>>> 2a04fee (eight)
 export default EntranceForm;
