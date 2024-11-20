@@ -1,19 +1,25 @@
 .entrance-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    /* gap: 8px; */
     margin-top: 16px;
-    justify-content:space-between;
+    /* justify-content:space-between;  */
     margin-bottom: 15px;
   }
   
   .entrance-button {
     background-color: #f9f9f9;
     color: black;
-    padding: 8px 16px;
+    padding: 8px 30px;
     font-size: 14px;
     border: 1px solid #ccc;
     cursor: pointer;
     border-radius: 4px;
   }
+  .entrance-button:hover {
+    border-color: #AE2121;
+  }
+
+ 
+  
   
