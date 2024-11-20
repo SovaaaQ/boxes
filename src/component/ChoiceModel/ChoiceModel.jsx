@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import mailBoxModel from "../model/mailBoxModel";
+import mailBoxModel from "../../model/mailBoxModel";
+import './ChoiceModel.css'; 
 
 const ChoiceModel = () => {
     const settings = {

@@ -1,34 +1,40 @@
-.div_num_entrances{
+.div_num_entrances{ 
+    display: flex; 
+    align-items: center; 
+    gap: 192px; 
+    margin-top: 30px; 
+    margin-bottom: 70px; 
+    justify-content: space-between;
+} 
+ 
+.num_entrances{ 
+    display: flex; 
+    gap: 10px; 
+} 
+ 
+.num_entrances-input{ 
+    border: 2px solid; 
+    border-radius: 2px; 
+    width: 35px; 
+    height: 20px; 
+    font-size: 14px; 
+    text-align: center; 
+} 
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button { 
+-webkit-appearance: none; 
+} 
+ 
+.button_choise{ 
+    width: 400px; 
+    background: #fff; 
+} 
+
+.label_apartment{
     display: flex;
-    align-items: center;
-    gap: 192px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
-
-.num_entrances{
-    display: flex;
-    gap: 10px;
-}
-
-.num_entrances-input{
-    border: 2px solid;
-    border-radius: 2px;
-    width: 35px;
-    height: 20px;
-    font-size: 14px;
-    text-align: center;
-}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
--webkit-appearance: none;
-}
-
-.button_choise{
-    width: 300px;
-    background: #fff;
-
-    
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .button_text_num{
@@ -50,71 +56,3 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
     gap: 5px;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-button {
-    background-color: #f9f9f9;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  
-  .dropdown-button svg {
-    margin-left: 8px;
-  }
-  
-  .dropdown-content {
-    display: block;
-    position: absolute;
-    right: 0; /* Position the dropdown to the right of the button */
-    top: 100%; /* Position the dropdown below the button */
-    background-color: #f9f9f9;
-    min-width: 320px; /* Make the dropdown wider */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 16px;
-  }
-  
-  .dropdown-content .button_choise {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content */
-  }
-  
-  .dropdown-content .checkbox-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
-  .dropdown-content .label_text_num {
-    margin-right: 8px;
-  }
-  
-  .entrance-grid {
-    display: grid;
-    gap: 16px;
-    justify-items: center; /* Center the items */
-  }
-  
-  .entrance-grid.two-columns {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: dense; /* Ensure items flow vertically within columns */
-  }
-  
-  .entrance-item {
-    margin-bottom: 8px;
-    text-align: center; /* Center the text */
-  }
-  
-  .entrance-item .num_entrances-input {
-    margin-left: 8px;
-  }
-  
