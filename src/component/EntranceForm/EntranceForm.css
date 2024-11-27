@@ -10,6 +10,8 @@
 .num_entrances{ 
   display: flex; 
   gap: 10px; 
+  justify-content: center;
+    align-items: center;
 } 
 
 .num_entrances-input{ 
@@ -18,7 +20,14 @@
   width: 35px; 
   height: 20px; 
   font-size: 14px; 
-  text-align: center; 
+  text-align: center;
+  background-color: #fff;
+    color: black;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    
+
 } 
 input[type="number"]::-webkit-outer-spin-button, 
 input[type="number"]::-webkit-inner-spin-button { 
@@ -84,7 +93,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .dropdown-button { 
   background-color: #fff; 
   color: black; 
-  padding: 16px; 
+  padding: 8px; 
   font-size: 16px; 
   border: none; 
   cursor: pointer; 
@@ -92,6 +101,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center; 
   width: 400px;
   justify-content: center;
+  border: 1px solid #ccc;
 } 
  
 .dropdown-button svg { 

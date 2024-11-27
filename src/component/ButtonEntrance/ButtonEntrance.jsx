@@ -3,6 +3,7 @@ import './ButtonEntrance.css';
 
 const ButtonEntrance = ({ numEntrances }) => {
   const renderButtons = () => {
+
     const buttons = [];
     for (let i = 1; i <= numEntrances; i++) {
       buttons.push(
@@ -14,7 +15,12 @@ const ButtonEntrance = ({ numEntrances }) => {
     return buttons;
   };
 
-  return <div className='entrance-buttons'>{renderButtons()}</div>;
+  return <>
+    <p className='text_title'>Подъезд</p>
+    <p><span className='red'>По умолчанию параметры применяются ко всем подъездам,</span><br /> но вохможно выбрать любой подъезд и изменить его параметры</p>
+    <div className='entrance-buttons'>{renderButtons()}</div>
+  </>
+
 };
 
 export default ButtonEntrance;

@@ -8,7 +8,7 @@
   }
   
   .entrance-button {
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: black;
     padding: 8px 30px;
     font-size: 14px;
@@ -18,6 +18,14 @@
   }
   .entrance-button:hover {
     border-color: #AE2121;
+  }
+  .red{
+    color: #AE2121;
+  }
+  .text_title{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px;
   }
 
  

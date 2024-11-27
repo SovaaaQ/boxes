@@ -22,7 +22,8 @@
   
   .model:hover {
     background: linear-gradient(to bottom, #AE2121 50%, #fff 50%); /* Градиент для разделения цветов */
-    border-radius: 0; /* Убираем скругления */
+    /* border-radius: 0; Убираем скругления */
+    border: #AE2121 0.5px solid;
   }
   .model-image {
     width: 120px; /* Ширина изображения */
