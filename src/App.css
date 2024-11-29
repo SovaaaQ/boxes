@@ -12,3 +12,14 @@
   margin: 0 auto;
 }
 
+.div_leftAndRight{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.div_box{
+  height: 600px;
+  width: 1200px;
+  background-color: white;
+}

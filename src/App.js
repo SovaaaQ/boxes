@@ -2,7 +2,7 @@ import './App.css';
 import EntranceForm from './component/EntranceForm/EntranceForm';
 import SizeMailbox from './component/SizeMailbox';
 import ChoiceModel from './component/ChoiceModel/ChoiceModel';
-import SpamAndBatteries from './component/SpamAndBatteries';
+import SpamAndBatteries from './component/SpamAndBAtteries/SpamAndBatteries';
 import ColorChoice from './component/ColorChoice/ColorChoice';
 
 function App() {
@@ -15,9 +15,16 @@ function App() {
       <body>
         <ChoiceModel/>
         <EntranceForm/>
-        <SizeMailbox/>
-        <SpamAndBatteries/>
-        <ColorChoice/>
+        <div className='div_leftAndRight'>
+          <div className='div_box'>
+            1
+          </div>
+          <div>
+            <SizeMailbox/>s
+            <ColorChoice/>
+            <SpamAndBatteries/>
+          </div>
+        </div>
       </body>
     </div>
   );

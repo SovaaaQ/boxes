@@ -1,3 +1,4 @@
+import './SpamAndBatteries';
 
 import React, { useState } from 'react';
 
@@ -10,8 +11,18 @@ const SpamAndBatteries = () => {
 
     return (
         <>
+        <div className='number_yes'>
+            <label htmlFor="yes">Нумерация</label>
+                <input 
+                    type="checkbox" 
+                    id="yes" 
+                    name="yes" 
+                    onChange={handleCheckboxChange} 
+                />
+        </div>
+        <p>Дополнительно</p>
         <div>
-            <label htmlFor="yes">Вам нужен бокс для сбора спама и макулатуры? Да</label>
+            <label htmlFor="yes">Бокс для сбора спама и макулатуры</label>
                 <input 
                     type="checkbox" 
                     id="yes" 
@@ -20,7 +31,7 @@ const SpamAndBatteries = () => {
                 />
         </div>
         <div>
-            <label htmlFor="yes">Вам нужен бокс для сбора батареек? Да</label>
+            <label htmlFor="yes">Бокс для сбора батареек</label>
             <input 
                 type="checkbox" 
                 id="yes" 
