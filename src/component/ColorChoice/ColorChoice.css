@@ -1,0 +1,72 @@
+.color-choice {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .content-wrapper {
+    margin-left: auto; /* Смещение вправо */
+  }
+  
+  .div_color {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Отступ между "Цвет" и кнопками */
+    text-align: left;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .drop {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    padding: 13px 54px; /* Внутренние отступы: 13 сверху/снизу, 54 по бокам */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn .icon {
+    margin-left: 20px; /* Отступ между текстом и стрелкой */
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .button_choice {
+    padding: 10px;
+  }
+  
+  .label-frame {
+    padding: 10px;
+  }
+  
+  .label_text_num {
+    font-size: 14px;
+    color: #333;
+  }
+  
