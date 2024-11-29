@@ -20,7 +20,7 @@ function App() {
             1
           </div>
           <div>
-            <SizeMailbox/>s
+            <SizeMailbox/>
             <ColorChoice/>
             <SpamAndBatteries/>
           </div>

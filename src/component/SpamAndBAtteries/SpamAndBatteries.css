@@ -1,6 +1,22 @@
 .number_yes{
     font-weight: 700;
-    font-size: 36px;
-    margin-top: 64px;
+    font-size: 18px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
 
+.spam{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.doubleSpam{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

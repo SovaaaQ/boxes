@@ -1,9 +1,9 @@
-import './SpamAndBatteries';
+import './SpamAndBatteries.css';
 
 import React, { useState } from 'react';
 
 const SpamAndBatteries = () => {
-    const [isChecked, setIsChecked] = useState(false); 
+    const [isChecked, setIsChecked] = useState(false);
 
     const handleCheckboxChange = (event) => {
         setIsChecked(event.target.checked);
@@ -11,34 +11,38 @@ const SpamAndBatteries = () => {
 
     return (
         <>
-        <div className='number_yes'>
-            <label htmlFor="yes">Нумерация</label>
-                <input 
-                    type="checkbox" 
-                    id="yes" 
-                    name="yes" 
-                    onChange={handleCheckboxChange} 
+            <div className='number_yes'>
+                <label htmlFor="yes">Нумерация</label>
+                <input
+                    type="checkbox"
+                    id="yes"
+                    name="yes"
+                    onChange={handleCheckboxChange}
                 />
-        </div>
-        <p>Дополнительно</p>
-        <div>
-            <label htmlFor="yes">Бокс для сбора спама и макулатуры</label>
-                <input 
-                    type="checkbox" 
-                    id="yes" 
-                    name="yes" 
-                    onChange={handleCheckboxChange} 
-                />
-        </div>
-        <div>
-            <label htmlFor="yes">Бокс для сбора батареек</label>
-            <input 
-                type="checkbox" 
-                id="yes" 
-                name="yes" 
-                onChange={handleCheckboxChange} 
-            />
-        </div>
+            </div>
+            <p className='number_yes'>Дополнительно</p>
+            <div className='doubleSpam'>
+                <div className='spam'>
+                    <label htmlFor="yes">Бокс для сбора спама и макулатуры</label>
+                    <input
+                        type="checkbox"
+                        id="yes"
+                        name="yes"
+                        onChange={handleCheckboxChange}
+                    />
+                </div>
+                <div className='spam'>
+                    <label htmlFor="yes">Бокс для сбора батареек</label>
+                    <input
+                        type="checkbox"
+                        id="yes"
+                        name="yes"
+                        onChange={handleCheckboxChange}
+                    />
+                </div>
+            </div>
+
+
         </>
     );
 }
