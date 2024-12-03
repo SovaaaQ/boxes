@@ -4,6 +4,7 @@ import SizeMailbox from './component/SizeMailbox';
 import ChoiceModel from './component/ChoiceModel/ChoiceModel';
 import SpamAndBatteries from './component/SpamAndBAtteries/SpamAndBatteries';
 import ColorChoice from './component/ColorChoice/ColorChoice';
+import ButtonFooter from './component/ButtonFooter/ButtonFooter';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         </div>
       </body>
       <footer>
-        <div></div>
+        <ButtonFooter/>
       </footer>
     </div>
   );
