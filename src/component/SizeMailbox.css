@@ -1,0 +1,46 @@
+.dimensions-container {
+    width: 728px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  .header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .dimensions-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .dimension {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .value {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .divider {
+    width: 1px;
+    background-color: #ddd;
+    height: auto;
+  }
+  

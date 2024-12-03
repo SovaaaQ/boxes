@@ -26,6 +26,9 @@ function App() {
           </div>
         </div>
       </body>
+      <footer>
+        <div></div>
+      </footer>
     </div>
   );
 }

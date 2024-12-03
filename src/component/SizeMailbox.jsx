@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SizeMailbox.css';
 
 const SizeMailbox = () => {
   const [width, setWidth] = useState(0);
@@ -15,21 +16,25 @@ const SizeMailbox = () => {
   };
 
   return (
-    <div>
-      <label>
-      Укажите габаритные размеры области монтажа почтовых ящиков -
-        Ширина
-        <input type="number" value={width} onChange={handleWidthChange} />
-      </label>
-      <label>
-        Высота
-        <input type="number" value={length} onChange={handleLengthChange} />
-      </label>
-      <label>
-        Глубина
-        <input type="number" value={length} onChange={handleLengthChange} />
-      </label>
+    <div class="dimensions-container">
+  <div class="header">Габариты</div>
+  <div class="dimensions-block">
+    <div class="dimension">
+      <div class="label">Ширина</div>
+      <div class="value">340 мм</div>
     </div>
+    <div class="divider"></div>
+    <div class="dimension">
+      <div class="label">Глубина</div>
+      <div class="value">196 мм</div>
+    </div>
+    <div class="divider"></div>
+    <div class="dimension">
+      <div class="label">Высота</div>
+      <div class="value">205 мм</div>
+    </div>
+  </div>
+</div>
   );
 };
 
