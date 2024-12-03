@@ -1,46 +1,61 @@
 .dimensions-container {
-    width: 728px;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  
-  .header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .dimensions-block {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .dimension {
-    flex: 1;
-    text-align: center;
-    padding: 15px 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .label {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .value {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .divider {
-    width: 1px;
-    background-color: #ddd;
-    height: auto;
-  }
-  
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.dimensions {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.dimension-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.dimension-item:last-child {
+  border-right: none;
+}
+
+.dimension-item span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.dimension-item strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.columns-input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columns-input label {
+  font-size: 14px;
+  color: #333;
+}
+
+.columns-input input {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
