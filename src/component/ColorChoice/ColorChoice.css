@@ -1,68 +1,120 @@
+/* Общие стили */
 .color-choice {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .div_color {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px; /* Отступ между "Цвет" и кнопками */
-    text-align: left;
-  }
-  
-  .button-group {
-    display: flex;
-    gap: 20px; /* Расстояние между кнопками */
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  .drop {
-    position: relative;
-  }
-  
-  .dropdown-btn {
-    padding: 13px 54px; /* Внутренние отступы: 13 сверху/снизу, 54 по бокам */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .dropdown-btn .icon {
-    margin-left: 20px; /* Отступ между текстом и стрелкой */
-  }
-  
-  .dropdown-btn:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .dropdown-content2 {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
-  
-  .button_choice {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    
-  }
-  
-  .label-frame {
-    padding: 10px;
-  }
-  
-  .p_text_num {
-    font-size: 16px;
-    color: black;
-  }
-  
+  display: flex;
+  flex-direction: grid;
+}
+
+.div_color {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.drop {
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 13px 54px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown-content2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.button_choice {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label-frame {
+  margin-bottom: 15px;
+}
+
+.p_text_num {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+
+/* Сетка цветов */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.color-box {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Ховер эффект */
+.color-box:hover {
+  border: 2px solid red;
+}
+
+.color-box[data-color="10000"] {
+  background-color: #cec094;
+}
+
+.color-box[data-color="1001"] {
+  background-color: #c2b078;
+}
+
+.color-box[data-color="1002"] {
+  background-color: #d6ae61;
+}
+
+.color-box[data-color="1003"] {
+  background-color: #f4a900;
+}
+
+.color-box[data-color="1004"] {
+  background-color: #e49e00;
+}
+.color-box[data-color="1015"] {
+  background-color: #EBDEBE;
+}
+.color-box[data-color="1016"] {
+  background-color: #EAF044;
+}
+.color-box[data-color="1017"] {
+  background-color: #F5B752;
+}
+.color-box[data-color="1018"] {
+  background-color: #F3E03B;
+}
+.color-box[data-color="1019"] {
+  background-color: #A5957E;
+}
+
+
