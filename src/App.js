@@ -5,6 +5,7 @@ import ChoiceModel from './component/ChoiceModel/ChoiceModel';
 import SpamAndBatteries from './component/SpamAndBAtteries/SpamAndBatteries';
 import ColorChoice from './component/ColorChoice/ColorChoice';
 import ButtonFooter from './component/ButtonFooter/ButtonFooter';
+import box from "./img/box.svg"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <EntranceForm/>
         <div className='div_leftAndRight'>
           <div className='div_box'>
-            1
+            <img src={box} className="box-image"></img>
           </div>
           <div>
             <SizeMailbox/>
