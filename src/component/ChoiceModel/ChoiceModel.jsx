@@ -22,7 +22,7 @@ const ChoiceModel = () => {
                     <Slider {...settings}>
                         {mailBoxModel.map((model, index) => (
                             <div key={index} className="model">
-                                <img src={model.image} alt={model.name} className="model-image" />
+                                <img src={model.image} alt={model.label || "Модель почтового ящика"} className="model-image" />
                                 <div className="model-description">{model.description}</div>
                             </div>
                         ))}
@@ -37,7 +37,7 @@ const ChoiceModel = () => {
 const SampleNextArrow = (props) => {
     const { onClick } = props;
     return (
-        <div className="arrow next" onClick={onClick}>
+        <div className="arrow next" onClick={onClick} aria-label="Следующая модель" role="button" tabIndex={0}>
             &#10095;
         </div>
     );
@@ -47,7 +47,7 @@ const SampleNextArrow = (props) => {
 const SamplePrevArrow = (props) => {
     const { onClick } = props;
     return (
-        <div className="arrow prev" onClick={onClick}>
+        <div className="arrow prev" onClick={onClick} aria-label="Предыдущая модель" role="button" tabIndex={0}>
             &#10094;
         </div>
     );
